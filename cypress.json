@@ -1,0 +1,30 @@
+{
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+        "configFile": "reporter-config.json"
+    },
+    "testFiles": "**/*.{feature,features,spec.js}",
+    "video": true,
+    "retries": {
+        "runMode": 1,
+        "openMode": 1
+    },
+    "pageLoadTimeout": 5000,
+    "defaultCommandTimeout": 5000,
+    "requestTimeout": 5000,
+    "responseTimeout": 5000,
+    "execTimeout": 60000,
+    "env": {
+        "HOST":                    "http://frontend.portal-test.svc.cluster.local",
+        "HOST_ARTICLE_SERVICE":    "http://article-service.portal-test.svc.cluster.local",
+        "HOST_ONBOARDING_SERVICE": "http://onboarding-service.portal-test.svc.cluster.local",
+        "HOST_USER_ACC_SERVICE":   "http://user-account-service.portal-test.svc.cluster.local",
+        "DB": {
+            "user": "INSERT_USER",
+            "host": "INSER_HOST",
+            "database": "POSTGRES_DB_NAME",
+            "password": "INSERT_PW",
+            "port": 5431
+        }
+    }
+}

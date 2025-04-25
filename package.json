@@ -1,0 +1,78 @@
+{
+  "name": "portal-e2e-test-automation",
+  "version": "1.0.0",
+  "description": "Portal project to run automated e2e test scripts.",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cross-env CYPRESS_HOST=https://ybgaiax.me CYPRESS_HOST_ARTICLE_SERVICE=https://ybgaiax.me CYPRESS_HOST_ONBOARDING_SERVICE=https://ybgaiax.me CYPRESS_HOST_EDGE_SERVICE=https://ybgaiax.me CYPRESS_HOST_USER_ACC_SERVICE=https://ybgaiax.me CYPRESS_HOST_DISCOVERY_SERVICE=https://ybgaiax.me cypress open",
+    "cy:run_local": "cross-env CYPRESS_HOST=http://gaia-x.portal.local:8085 CYPRESS_HOST_ARTICLE_SERVICE=http://gaia-x.article.local:8084 CYPRESS_HOST_ONBOARDING_SERVICE=http://gaia-x.onboarding.local:8083 CYPRESS_HOST_EDGE_SERVICE=http://gaia-x.edge.ext:8082 CYPRESS_HOST_USER_ACC_SERVICE=http://gaia-x.user-account.local:8086 CYPRESS_HOST_DISCOVERY_SERVICE=http://gaia-x.discovery.local:8087 cypress run",
+    "cy:run_regression": "cross-env CYPRESS_HOST=http://gaia-x.portal.local:8085 CYPRESS_HOST_ARTICLE_SERVICE=http://gaia-x.article.local:8084 CYPRESS_HOST_ONBOARDING_SERVICE=http://gaia-x.onboarding.local:8083 CYPRESS_HOST_EDGE_SERVICE=http://gaia-x.edge.ext:8082 CYPRESS_HOST_USER_ACC_SERVICE=http://gaia-x.user-account.local:8086 CYPRESS_HOST_DISCOVERY_SERVICE=http://gaia-x.discovery.local:8087 cypress run --spec cypress/integration/'Regression Tests'/*",
+    "report": "cross-env CYPRESS_HOST=https://ybgaiax.me CYPRESS_HOST_ARTICLE_SERVICE=https://ybgaiax.me CYPRESS_HOST_ONBOARDING_SERVICE=https://ybgaiax.me CYPRESS_HOST_EDGE_SERVICE=https://ybgaiax.me CYPRESS_HOST_USER_ACC_SERVICE=https://ybgaiax.me CYPRESS_HOST_DISCOVERY_SERVICE=https://ybgaiax.me cypress run --browser chrome --headless --reporter cypress-multi-reporters --reporter-options configFile=reporter-config.json",
+    "cy:run_extern": "cross-env CYPRESS_HOST=http://gaia-x.portal.ext:8085 CYPRESS_HOST_ARTICLE_SERVICE=http://gaia-x.article.ext:8084 CYPRESS_HOST_ONBOARDING_SERVICE=http://gaia-x.onboarding.ext:8083 CYPRESS_HOST_EDGE_SERVICE=http://gaia-x.edge.ext:8082 CYPRESS_HOST_USER_ACC_SERVICE=http://gaia-x.user-account.ext:8086 cypress run",
+    "report_extern": "cross-env CYPRESS_HOST=http://gaia-x.portal.ext:8085 CYPRESS_HOST_ARTICLE_SERVICE=http://gaia-x.article.ext:8084 CYPRESS_HOST_ONBOARDING_SERVICE=http://gaia-x.onboarding.ext:8083 CYPRESS_HOST_EDGE_SERVICE=http://gaia-x.edge.ext:8082 CYPRESS_HOST_USER_ACC_SERVICE=http://gaia-x.user-account.ext:8086 cypress run --reporter cypress-multi-reporters --reporter-options configFile=reporter-config.json",
+    "combine:reports": "jrm cypress/results/JUnit-Report.xml \"cypress/results/*.xml\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/gaia-x/data-infrastructure-federation-services/por/portal-e2e-test-automation.git"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/results/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "devDependencies": {
+    "cypress-cucumber-preprocessor": "latest",
+    "@cucumber/cucumber": "^8.2.1",
+    "@nuintun/qrcode": "^3.1.3",
+    "@zxing/browser": "^0.1.1",
+    "@zxing/library": "^0.19.1",
+    "ajv": "^8.11.0",
+    "ajv-formats": "^2.1.1",
+    "browser-stdout": "^1.3.1",
+    "camelcase": "^6.3.0",
+    "cross-env": "^7.0.3",
+    "cypress": "^9.6.0",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-mochawesome-reporter": "^3.0.1",
+    "cypress-multi-reporters": "^1.6.0",
+    "decamelize": "^4.0.0",
+    "find-up": "^5.0.0",
+    "flat": "^5.0.2",
+    "growl": "^1.10.5",
+    "he": "^1.2.0",
+    "is-plain-obj": "^2.1.0",
+    "jira-client": "^8.1.0",
+    "locate-path": "^6.0.0",
+    "junit-report-merger": "^3.0.5",
+    "mocha": "^10.0.0",
+    "mocha-junit-reporter": "^2.0.2",
+    "multiple-cucumber-html-reporter": "^1.20.0",
+    "nanoid": "^3.3.1",
+    "pg": "^8.7.3",
+    "p-limit": "^3.1.0",
+    "p-locate": "^5.0.0",
+    "serialize-javascript": "^6.0.0",
+    "strip-json-comments": "^3.1.1",
+    "uuid": "^8.3.2",
+    "workerpool": "^6.2.0",
+    "yargs": "^16.2.0",
+    "yargs-parser": "^20.2.4",
+    "yargs-unparser": "^2.0.0",
+    "yocto-queue": "^0.1.0"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/gaia-x/data-infrastructure-federation-services/por/portal-e2e-test-automation/issues"
+  },
+  "homepage": "https://gitlab.com/gaia-x/data-infrastructure-federation-services/por/portal-e2e-test-automation#readme",
+  "dependencies": {
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

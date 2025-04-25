@@ -1,0 +1,9 @@
+{
+  "avatarImageLink": "link.to.image.png",
+  "email": "max.mustermann@example.net",
+  "name": "Max",
+  "surname": "Mustermann",
+  "attributeA": "attribute A",
+  "attributeB": "attribute B",
+  "attributeC": "attribute C"
+}

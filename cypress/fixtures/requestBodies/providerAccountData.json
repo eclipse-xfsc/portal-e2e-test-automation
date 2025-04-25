@@ -1,0 +1,32 @@
+{
+    "alias": "string",
+    "avatarImageLink": "img.png",
+    "certification": "string",
+    "commercialRegister": "string",
+    "companyName": "string",
+    "dataProviderOfficer": {
+      "email": "string",
+      "name": "string",
+      "phoneNumber": "string",
+      "surname": "string"
+    },
+    "dunsNumber": "string",
+    "email": "string",
+    "individualContact": {
+      "email": "string",
+      "name": "string",
+      "phoneNumber": "string",
+      "surname": "string"
+    },
+    "legalEntityIdentifier": "string",
+    "localAttestation": "string",
+    "registeredAddress": {
+      "city": "string",
+      "country": "string",
+      "no": "string",
+      "postalCode": "string",
+      "street": "string"
+    },
+    "transparencyRegister": "string",
+    "webAddress": "string"
+  }

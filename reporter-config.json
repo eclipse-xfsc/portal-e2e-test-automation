@@ -1,0 +1,17 @@
+{
+  "reporterEnabled": "cypress-mochawesome-reporter, mocha-junit-reporter",
+  "mochaJunitReporterReporterOptions": {
+    "mochaFile": "cypress/results/results-[hash].xml"
+  },
+  "cypressMochawesomeReporterReporterOptions": {  
+    "reportDir": "cypress/reports",
+    "reportFilename": "Execution-Report",
+    "timestamp": "isoUtcDateTime",
+    "overwrite": false,
+    "charts": true,  
+    "reportPageTitle": "Portal Test Suite",  
+    "embeddedScreenshots": true,  
+    "inlineAssets": true  
+  },
+  "video": false
+}

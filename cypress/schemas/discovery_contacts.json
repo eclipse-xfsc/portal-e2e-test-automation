@@ -1,0 +1,40 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#", 
+	"$id": "https://example.com/object1652699920.json", 
+	"title": "Root", 
+	"type": "array",
+	"default": [],
+	"items":{
+		"$id": "#root/items", 
+		"title": "Items", 
+		"type": "object",
+		"required": [
+			"type",
+			"value"
+		],
+		"properties": {
+			"type": {
+				"$id": "#root/items/type", 
+				"title": "Type", 
+				"type": "string",
+				"default": "",
+				"examples": [
+					"tech_phone"
+				],
+				"pattern": "^.*$"
+			},
+			"value": {
+				"$id": "#root/items/value", 
+				"title": "Value", 
+				"type": "string",
+				"default": "",
+				"examples": [
+					"+49 00 0000 11111"
+				],
+				"pattern": "^.*$"
+			}
+		}
+	}
+
+}

@@ -1,0 +1,10 @@
+{
+  "aisbl": true,
+  "city": "Berlin",
+  "country": "Germany",
+  "email": "john@long.works",
+  "name": "Test Company",
+  "phone_number": "11223344",
+  "street_number": "Wall str. 12/3",
+  "zip": 334455
+}

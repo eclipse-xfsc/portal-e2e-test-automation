@@ -1,0 +1,16 @@
+
+### CypressIO ###
+# Local reports and other evidences
+cypress/results
+cypress/reports*
+cypress/screenshots
+cypress/videos
+mochawesome-report
+report
+
+# Node modules are generated in the CI pipeline
+node_modules
+
+### Visual Studio Code ###
+# Project files
+.vscode

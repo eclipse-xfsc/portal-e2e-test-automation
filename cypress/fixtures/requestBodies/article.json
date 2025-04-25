@@ -1,0 +1,23 @@
+{
+    "category": "ARTICLE",
+    "previewImagePath": "http://url.url/img.png",
+    "logoPath": "http://url2.url/img2.png",
+    "title": "Title #0",
+    "url": "http://url3.url/",
+    "teaserText": "teaser teaser teaser #0",
+    "paragraphs": [
+      {
+        "headline": "headline",
+        "paragraphs": "paragraph text text text"
+      },
+      {
+        "headline": "headline",
+        "paragraphs": "paragraph text text text"
+      },
+      {
+        "headline": "headline",
+        "paragraphs": "paragraph text text text"
+      }
+    ],
+    "timestamp": "2022-03-11T18:39:52.584+00:00"
+  }
